@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_signup_login"
+    tools:context=".Sign_Up_Activity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:text="Welcome, Sign Up" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:hintTextColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/etName"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            android:hint="Enter Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        app:startIconDrawable="@drawable/baseline_alternate_email_24"
+        app:hintTextColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/etEmail"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        app:hintTextColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/etUniqueId"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/white"
+            android:background="@drawable/bg_input"
+            android:hint="Enter Unique Id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_background"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/btnAlreadyReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_background"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="Already Registered ? Login" />
+</LinearLayout>
